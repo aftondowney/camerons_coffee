@@ -1,0 +1,5 @@
+name = Comment Buddy
+description = display confirmations after adding, deleting or updating comments
+package = Comment Buddy
+core = 7.x
+files = comment_buddy.module

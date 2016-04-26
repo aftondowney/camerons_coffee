@@ -1,0 +1,37 @@
+<?php
+
+function comment_buddy_menu() {
+  $items = array();
+
+  $items['comment_add'] = array(
+    'title' => '',
+    'page callback' => 'comment_buddy_comment_insert',
+    'access callback' => TRUE,
+    'type' => MENU_CALLBACK,
+  );
+  $items['comment_update'] = array(
+    'title' => 'Update',
+    'page callback' => 'comment_update',
+    'access callback' => TRUE,
+    'type' => MENU_CALLBACK,
+  );
+  $items['comment_delete'] = array(
+    'title' => 'Delete',
+    'page callback' => 'comment_delete',
+    'access callback' => TRUE,
+    'type' => MENU_CALLBACK,
+  );
+  return $items;
+}
+
+function comment_buddy_comment_insert() {
+  return drupal_set_message("Your comment has been added.");
+}
+
+function comment_buddy_comment_update() {
+  return drupal_set_message("Your comment has been updated.");
+}
+
+function comment_buddy_comment_delete() {
+  return drupal_set_message("Your comment has been deleted.");
+}

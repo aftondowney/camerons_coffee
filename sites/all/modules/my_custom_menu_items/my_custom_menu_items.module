@@ -176,7 +176,7 @@ function grocery_list()
 function pet_info() {
   return '
     <h3>Lava</h3>
-    <img src="/sites/all/modules/pet/image/pet.jpg"/><br>
+    <img src="/sites/all/modules/my_custom_menu_items/image/blackcat.jpg"/><br>
     <a href="https://en.wikipedia.org/wiki/Black_cat">Learn More about Black Cats</a>
     ';
 }

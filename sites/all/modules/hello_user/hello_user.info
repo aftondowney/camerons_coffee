@@ -1,0 +1,5 @@
+name = Hello User
+description = hello User
+package = Hello User
+core = 7.x
+files = hello_user.module
